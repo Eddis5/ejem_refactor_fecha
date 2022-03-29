@@ -50,7 +50,7 @@ class FechaTest {
 
     @Test
     void diasMesFebrero(){
-        assertEquals(29,diaBienFebreroBisiesto1.diasMesFebrero());
+        assertEquals(29,diaBienFebreroBisiesto1.diasMesBisiesto());
 
     }
 }

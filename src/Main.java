@@ -92,15 +92,19 @@ class Fecha{
         return diasMes;
     }
 
-    public int diasMesFebrero(){
-        int diasMesFebrero = 0;
 
-        if ((anio % 400 == 0) || ((anio % 4 == 0) && (anio % 100 != 0))) {
-            return diasMesFebrero = 29;
+    public int diasMesBisiesto(){
+        int diasMes;
+
+        if (bisiesto()) {
+            return diasMes = 29;
         }else {
-            return diasMesFebrero = 28;
+            return diasMes = 28;
         }
 
+    }
 
+    public boolean bisiesto(){
+        return (anio % 400 == 0) || ((anio % 4 == 0) && (anio % 100 != 0));
     }
 }
